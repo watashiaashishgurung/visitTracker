@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1>Customer Visit Tracker</h1>
-    <h2>Add a Visit</h2>
+    <h2>Visit Log Entry</h2>
     <form id="visitForm">
         <label for="customerName">Customer Name:</label>
-        <input type="text" id="customerName" placeholder="Enter customer name" required>
+        <input type="text" id="customerName" placeholder="Please enter customer name" required>
     
         <label for="customerEmail">Customer Email:</label>
-        <input type="email" id="customerEmail" placeholder="Enter customer email" required>
+        <input type="email" id="customerEmail" placeholder="Please enter customer email" required>
 
         <label for="customerPhone">Customer Phone:</label>
-        <input type="tel" id="customerPhone" placeholder="Enter customer phone" required>
+        <input type="tel" id="customerPhone" placeholder="Please enter customer phone number" required>
 
         <label for="visitDate">Visit Date:</label>
         <input type="date" id="visitDate" required>
@@ -26,10 +26,10 @@
         <input type="time" id="visitTime" required>        
         
         <label for="visitIssue">Question or Issue:</label>
-        <textarea id="visitIssue" rows="3" placeholder="Describe the issue or question" required></textarea>
+        <textarea id="visitIssue" rows="3" placeholder="Please write your question or issue here" required></textarea>
 
         <label for="visitOutcome">Response or Outcome:</label>
-        <textarea id="visitOutcome" rows="3" placeholder="Describe the response or outcome" required></textarea>
+        <textarea id="visitOutcome" rows="3" placeholder="Please write the response, explanation, and troubleshooting steps or results here" required></textarea>
 
         <button type="submit">Add Visit</button>
     </form>
@@ -52,8 +52,13 @@
         </tbody>
     </table>
 
-    <button id="ShowVisitLog">Show Visit Log</button>
-    <button id="clearAllButton">Clear All Visits</button>
+    <div class="button-container">
+        <button id="ShowVisitLog">Show Visit Log</button>
+        <button id="clearAllButton">Clear All Visits</button>
+    </div>
+    <div class="box">
+        <h1>Welcome bij de Nomade</h1>
+    </div>
 
     <script src="script.js"></script>
 </body>

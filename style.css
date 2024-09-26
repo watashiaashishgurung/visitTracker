@@ -81,18 +81,14 @@ th {
 
 /* Hide the print button when printing */
 @media print {
-    #printButton {
+    #printButton,
+    #downloadCSVButton {
         display: none;
     }
 }
-
 /* Responsive Styles */
 @media (max-width: 600px) {
     form {
-        padding: 10px;
-    }
-
-    input, textarea, button {
         padding: 8px;
     }
 
@@ -100,3 +96,35 @@ th {
         padding: 8px;
     }
 }
+
+/*
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+    animation: slide 20s ease forwards;
+    border: #007BFF 2px solid;
+    border-radius: 6px;
+    color: #007BFF;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+    */
