@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Survey Form Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     margin-top: 20px;
 }
@@ -31,7 +31,7 @@ label {
     text-align: left;
 }
 
-input, textarea, button {
+input, select, textarea, button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -51,48 +51,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-table {
-    width: 100%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    max-width: 1000px;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-/* Centering the buttons side by side */
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Space between the buttons */
-    margin-top: 20px;
-    size: 50%;
-}
-
-/* Hide the print button when printing */
-@media print {
-    #printButton,
-    #downloadCSVButton {
-        display: none;
-    }
-}
-/* Responsive Styles */
-@media (max-width: 600px) {
-    form {
-        padding: 8px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
 }

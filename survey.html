@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+    <h1>Customer Satisfaction Survey</h1>
+    <form id="surveyForm">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required>
+
+        <label for="visitDate">Visit Date:</label>
+        <input type="date" id="visitDate" required>
+
+        <label for="satisfactionLevel">How satisfied were you with the service provided?</label>
+        <select id="satisfactionLevel" required>
+            <option value="">Select an option</option>
+            <option value="verySatisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="veryDissatisfied">Very Dissatisfied</option>
+        </select>
+
+        <label for="issueResolved">Was your issue resolved?</label>
+        <select id="issueResolved" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" rows="4" placeholder="Enter any additional comments"></textarea>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="survey.js"></script>
+</body>
+</html>
